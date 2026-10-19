@@ -1,5 +1,6 @@
 import tkinter as tk
 from datetime import datetime
+import time
 
 def update_clock():
     now = datetime.now()
@@ -30,6 +31,10 @@ except:
         padx=20,
         pady=20
     )
+
+print("If you see this message, please make sure the file type is .pyw and you are double clicking it.")
+time.sleep(1.5)
+
 clock_label.pack()
 
 update_clock()
